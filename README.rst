@@ -31,3 +31,4 @@ Disclaimer
 nRF Connect SDK supports development with nRF9160 Cellular IoT devices.
 nRF53 Series devices (which are pre-production) and Zigbee and Bluetooth Mesh protocols are supported for development in v1.4.0 for prototyping and evaluation.
 Support for production and deployment in end products is coming soon.
+
