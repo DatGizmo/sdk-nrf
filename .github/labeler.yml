@@ -6,3 +6,34 @@
 "doc-required":
   - "doc/**/*"
   - "**/*.rst"
+
+"CI-ble-test":
+  - subsys/bluetooth/**/*
+  - include/bluetooth/**/*
+  - samples/bluetooth/**/*
+
+"CI-dfu-test":
+  - samples/nrf9160/http_application_update/*
+  - samples/nrf9160/aws_fota/*
+  - samples/nrf5340/netboot/*
+  - samples/bluetooth/peripheral_uart/*
+  - subsys/bootloader/*
+  - subsys/partition_manager/*
+  - subsys/dfu/*
+  - subsys/fw_info/*
+  - subsys/net/lib/aws*/*
+  - subsys/net/lib/download_client/*
+  - subsys/net/lib/fota_download/*
+  - subsys/nonsecure/*
+  - subsys/pcd/*
+  - subsys/spm/*
+  - include/dfu/*.h
+  - include/net/aws_*.h
+  - include/net/*download*.h
+  - include/bl_*.h
+  - include/spm.h
+  - include/fw_info.h
+  - scripts/partition_manager/*
+  - scripts/bootloader
+  - cmake/*
+  - lib/fprotect/*
