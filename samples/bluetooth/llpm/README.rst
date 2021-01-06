@@ -3,6 +3,8 @@
 Bluetooth: LLPM
 ###############
 
+Testing github auto label globstring
+
 .. contents::
    :local:
    :depth: 2
