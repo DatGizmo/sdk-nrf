@@ -5,5 +5,4 @@ tests:
   applications.connectivity_bridge:
     build_only: true
     build_on_all: true
-    platform_allow: thingy91_nrf52840
     tags: ci_build

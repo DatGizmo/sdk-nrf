@@ -3,7 +3,6 @@ sample:
   description: Bluetooth Low Energy central battery service sample
 tests:
   samples.bluetooth.central_bas:
-    platform_allow: nrf51dk_nrf51422 nrf52dk_nrf52832 nrf52840dk_nrf52840
     harness: bluetooth
     tags: bluetooth
   samples.bluetooth.central_bas.build:

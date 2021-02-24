@@ -5,4 +5,3 @@ tests:
   samples.nrf_rpc.entropy_cpunet:
     build_only: true
     build_on_all: true
-    platform_allow: nrf5340dk_nrf5340_cpunet

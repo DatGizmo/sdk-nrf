@@ -5,7 +5,6 @@ tests:
     filter: CONFIG_UART_CONSOLE and CONFIG_SERIAL_SUPPORT_INTERRUPT
     tags: samples console
     harness: keyboard
-    platform_allow: nrf51dk_nrf51422 nrf52dk_nrf52832 nrf52840dk_nrf52840 nrf52dk_nrf52810
   samples.esb.prx.build:
     build_only: true
     build_on_all: true

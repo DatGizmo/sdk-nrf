@@ -5,7 +5,6 @@ sample:
 tests:
   zigbee.ncp:
     build_only: true
-    platform_allow: nrf52833dk_nrf52833 nrf52840dk_nrf52840 nrf21540dk_nrf52840
     tags: ci_build
 
   zigbee.ncp.usb:
