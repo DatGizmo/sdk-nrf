@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
+# PR-Test-chang
 
 config MPSL_FEM_ONLY
 	bool "Support only radio front-end module (FEM)"
