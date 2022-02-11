@@ -33,6 +33,8 @@ manifest:
       url-base: https://github.com/NordicSemiconductor
     - name: memfault
       url-base: https://github.com/memfault
+    - name: sewe
+      url-base: https://github.com/datgizmo
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -99,16 +101,18 @@ manifest:
     # changes.
     - name: mcuboot
       repo-path: sdk-mcuboot
-      revision: v1.8.99-ncs1
+      remote: sewe
+      revision: 17f6d045a10a8d2ba9f3dede820e9c6dd81a5c56
       path: bootloader/mcuboot
     - name: mbedtls-nrf
       path: mbedtls
       repo-path: sdk-mbedtls
       revision: v3.0.0-ncs1
     - name: nrfxlib
+      remote: sewe
       repo-path: sdk-nrfxlib
       path: nrfxlib
-      revision: 79c55b287673dbae97e2cfded8acba570b19c8a2
+      revision: a9232c5e822ba3f172c81a6a7222a6e528627adb
     - name: trusted-firmware-m
       repo-path: sdk-trusted-firmware-m
       path: modules/tee/tf-m/trusted-firmware-m
