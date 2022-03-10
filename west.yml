@@ -112,7 +112,7 @@ manifest:
       remote: sewe
       repo-path: sdk-nrfxlib
       path: nrfxlib
-      revision: 9521bc7040dfd3d03a14ddb2a1ba1b57930548c7
+      revision: a9232c5e822ba3f172c81a6a7222a6e528627adb
     - name: trusted-firmware-m
       repo-path: sdk-trusted-firmware-m
       path: modules/tee/tf-m/trusted-firmware-m
