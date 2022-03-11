@@ -120,7 +120,7 @@ manifest:
     - name: tfm-mcuboot # This is used by the trusted-firmware-m module.
       repo-path: sdk-mcuboot
       path: modules/tee/tfm-mcuboot
-      revision: v1.8.99-ncs1
+      revision: for-testing
     - name: matter
       repo-path: sdk-connectedhomeip
       path: modules/lib/matter
