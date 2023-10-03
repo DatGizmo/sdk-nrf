@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Comment test
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M:%S')"
       - name: comment test
         uses: datgizmo/action-comment@main
         with:
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
           messages: |
-                    This is a test comment
+                    This is a test comment @ ${{ steps.date.outputs.date }}
           note: "Test update note"
