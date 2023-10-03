@@ -15,6 +15,6 @@ jobs:
         uses: datgizmo/action-comment@main
         with:
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          messages: |
-                    This is a test comment @ ${{ steps.date.outputs.date }}
+          message: |
+                   This is a test comment @ ${{ steps.date.outputs.date }}
           note: "Test update note"
