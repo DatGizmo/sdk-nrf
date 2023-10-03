@@ -1,0 +1,17 @@
+name: Comment test
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+jobs:
+  contribs:
+    runs-on: ubuntu-latest
+    name: Comment test
+    steps:
+      - name: comment test
+        uses: datgizmo/action-comment@main
+        with:
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          messages: |
+                    This is a test comment
+          note: "Test update note"
