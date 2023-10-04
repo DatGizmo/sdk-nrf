@@ -17,4 +17,5 @@ jobs:
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
           message: |
                    This is a test comment @ ${{ steps.date.outputs.date }}
+                   $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
           note: "Test update note"
