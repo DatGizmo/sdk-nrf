@@ -5,6 +5,7 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - main
+      - main-test
       - 'v*-branch'
     paths:
       - 'scripts/requirements*.txt'
