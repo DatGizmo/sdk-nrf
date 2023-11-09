@@ -42,8 +42,6 @@ jobs:
           pip3 install --user -U setuptools wheel pip virtualenv virtualenvwrapper west
           west init -l nrf
           west update --narrow mcuboot zephyr
-          printenv
-          git remote -v
 
       - name: Execute script diff action
         uses: nordicbuilder/action-script-diff@v0.1
@@ -71,6 +69,8 @@ jobs:
           git_user_name: "Nordic Builder"
           git_user_email: "pylon@nordicsemi.no"
           script_call: |
+            printenv
+            git remote -v
             OUT_FILE="nrf/scripts/requirements-fixed.txt"
             echo "Writing frozen requirements to: $OUT_FILE"
             echo "Log python version: $(python --version)"
