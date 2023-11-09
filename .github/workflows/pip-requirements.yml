@@ -70,7 +70,7 @@ jobs:
           git_user_email: "pylon@nordicsemi.no"
           script_call: |
             printenv
-            git remote -v
+            PR ${{ github.event.pull_request.number }}
             OUT_FILE="nrf/scripts/requirements-fixed.txt"
             echo "Writing frozen requirements to: $OUT_FILE"
             echo "Log python version: $(python --version)"
