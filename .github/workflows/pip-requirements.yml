@@ -42,6 +42,8 @@ jobs:
           pip3 install --user -U setuptools wheel pip virtualenv virtualenvwrapper west
           west init -l nrf
           west update --narrow mcuboot zephyr
+          printenv
+          git remote -v
 
       - name: Execute script diff action
         uses: nordicbuilder/action-script-diff@v0.1
