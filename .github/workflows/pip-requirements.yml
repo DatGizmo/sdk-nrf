@@ -45,6 +45,8 @@ jobs:
 
       - name: Execute script diff action
         uses: nordicbuilder/action-script-diff@v0.1
+        env:
+          PR: ${{ github.event.pull_request.number }}
         with:
           github-token: ${{ secrets.NCS_GITHUB_TOKEN }}
           message_diff: |
@@ -70,7 +72,6 @@ jobs:
           git_user_email: "pylon@nordicsemi.no"
           script_call: |
             printenv
-            PR ${{ github.event.pull_request.number }}
             OUT_FILE="nrf/scripts/requirements-fixed.txt"
             echo "Writing frozen requirements to: $OUT_FILE"
             echo "Log python version: $(python --version)"
