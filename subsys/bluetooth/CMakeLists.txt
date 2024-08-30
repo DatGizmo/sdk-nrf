@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
+# Texet to select ble test
 
 zephyr_sources_ifdef(CONFIG_BT_GATT_POOL gatt_pool.c)
 zephyr_sources_ifdef(CONFIG_BT_GATT_DM gatt_dm.c)
