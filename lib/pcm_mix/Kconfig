@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
+# Test change to enable ci-audio-test
 
 menuconfig PCM_MIX
 	bool "PCM - Pulse Code Modulation mix library"
