@@ -1,0 +1,14 @@
+extends: default
+
+ignore: |
+  *.md
+  CODEOWNERS
+  *.ini
+
+rules:
+  colons: disable
+  comments: disable
+  comments-indentation: disable
+  document-start: disable
+  line-length: disable
+  new-line-at-end-of-file: disable
