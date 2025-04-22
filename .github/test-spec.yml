@@ -5,8 +5,8 @@
   - "**/VERSION"
   - "**/*.rst"
 
-"CI-run-twister"
-   - any:
+"CI-run-twister":
+  - any:
       - "!.github/**/*"
       - "!.vscode/**/*"
       - "!doc/**/*"
