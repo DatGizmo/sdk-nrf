@@ -3,8 +3,6 @@ name: Lint yaml files
 
 on:
   pull_request:
-    paths:
-      - '.github/test-spec.yml'
 
 jobs:
   lint_yml:
@@ -15,7 +13,6 @@ jobs:
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c  # v3.1.1
         with:
-          file_or_dir: .github/test-spec.yml
           strict: false  # Don't fail for warnings
           config_data: |
               extends: default
