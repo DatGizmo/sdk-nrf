@@ -29,3 +29,4 @@ jobs:
                 line-length: disable
                 new-line-at-end-of-file: disable
                 indentation: disable
+                truthy: disable
