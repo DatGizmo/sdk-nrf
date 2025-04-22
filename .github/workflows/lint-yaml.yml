@@ -7,26 +7,6 @@ on:
 jobs:
   lint_yml:
     runs-on: ubuntu-latest
-    name: Execute yamllint
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c  # v3.1.1
-        with:
-          strict: false  # Don't fail for warnings
-          config_data: |
-              extends: default
-              ignore: |
-                *.md
-                CODEOWNERS
-                *.ini
-              # Ignoring most of the fromat related rules.
-              rules:
-                colons: disable
-                comments: disable
-                comments-indentation: disable
-                document-start: disable
-                line-length: disable
-                new-line-at-end-of-file: disable
-                indentation: disable
-                truthy: disable
+      - name: Execute yamllint
+        uses: nrfconnect/action-yamllint@main
