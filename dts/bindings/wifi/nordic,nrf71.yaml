@@ -7,6 +7,6 @@ description: >
 
 compatible: nordic,wifi71
 
-include
+include:
   - "wifi-tx-power-2g.yaml"
   - "wifi-tx-power-5g.yaml"
