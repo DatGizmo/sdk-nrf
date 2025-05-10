@@ -1,11 +1,12 @@
 # This is the Jenkins ci variant of the .github/labler.yaml
+# New comment to trigger yamllint
 
 "__EXCLUDE__":
   - "**/VERSION"
   - "**/*.rst"
 
-"CI-run-twister":
-  - any:
+"CI-run-twister"
+   - any:
       - "!.github/**/*"
       - "!.vscode/**/*"
       - "!doc/**/*"
